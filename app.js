@@ -8,15 +8,17 @@ let nota = 0;
 
 do{
     if(error_do){
-        alert("Ingrese un número entero");
+        alert("Ingrese un número entero positivo");
     }
     cantidad = prompt("Ingrese cantidad de alumnos");
     cant_alumnos = parseInt(cantidad);
     console.log(cant_alumnos);
     if(cantidad != cant_alumnos || cant_alumnos <= 0){
         error_do = true;
+    }else{
+        error_do = false;
     }
-}while(cantidad != cant_alumnos);
+}while(error_do);
 
 
 for(i=0; i<cant_alumnos; i++){
