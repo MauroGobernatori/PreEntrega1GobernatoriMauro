@@ -12,7 +12,7 @@ do{
     }
     cantidad = prompt("Ingrese cantidad de alumnos");
     cant_alumnos = parseInt(cantidad);
-    if(cantidad != cant_alumnos){
+    if(cantidad != cant_alumnos || cant_alumnos < 0){
         error_do = true;
     }
 }while(cantidad != cant_alumnos);
